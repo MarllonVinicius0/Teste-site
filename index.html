@@ -11,9 +11,18 @@
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminuo o tamanho do seu navegador.</p>
     
     <picture>
-        <source media="(max-width:750px )" srcset="images/fotop.png" type="image/png">
-        <source media="(max-width:1050px )" srcset="images/fotom.png" type="image/png">
-        <img src="images/fotog.png" alt="Imagem flexível">
+        <source media="(max-width:750px )" srcset="media/images/fotop.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="media/images/fotom.png" type="image/png">
+        <img src="media/images/fotog.png" alt="Imagem flexível">
     </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em html5.</p>
+    <!--<audio src="media/Audio2.mp3"controls autoplay></audio>-->
+    <audio preload="metadata" controls loop>
+       <source src="media/Audio2.mp3" type="audio/mpeg">
+    </audio>
+    <video muted id="meuvideo"width="960"height ="550"  autoplay loop>
+        <source src="media/meuvideo.mp4" type="video/mp4">
+    </video>
 </body>
 </html>
